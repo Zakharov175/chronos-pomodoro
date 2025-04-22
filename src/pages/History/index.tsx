@@ -87,8 +87,8 @@ export function History() {
               <DefaultButton
                 icon={<TrashIcon />}
                 color='red'
-                aria-label='Apagar todo o histórico'
-                title='Apagar hitórico'
+                aria-label='Apagar todo o histórico.'
+                title='Apagar hitórico.'
                 onClick={handleResetHistory}
               />
             </span>
