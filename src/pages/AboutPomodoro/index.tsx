@@ -3,8 +3,12 @@ import { GenericHtml } from '../../components/GenericHtml';
 import { Heading } from '../../components/Heading';
 import { RouterLink } from '../../RouterLink';
 import { MainTemplate } from '../../templates/MainTemplates';
+import useDocumentTitle from '../../useHooks/useDocumentTitle';
+import coverImage from '../../../public/images/favicon/cover-image.png';
 
 export function AboutPomodoro() {
+  useDocumentTitle('Entenda a Técnica Pomodoro - Chronos Pomodoro');
+
   return (
     <MainTemplate>
       <Container>
@@ -19,7 +23,11 @@ export function AboutPomodoro() {
             garantir descansos para evitar o cansaço mental.
           </p>
 
-          <img src='https://placehold.co/1920x1080' alt='' />
+          <img
+            src={coverImage}
+            style={{ borderRadius: '50px', padding: '5px' }}
+            alt='Técnica Pomodoro'
+          />
 
           <h2>Como funciona o Pomodoro tradicional?</h2>
           <ul>

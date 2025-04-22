@@ -3,8 +3,10 @@ import { GenericHtml } from '../../components/GenericHtml';
 import { Heading } from '../../components/Heading';
 import { RouterLink } from '../../RouterLink';
 import { MainTemplate } from '../../templates/MainTemplates';
+import useDocumentTitle from '../../useHooks/useDocumentTitle';
 
 export function NotFound() {
+  useDocumentTitle('Página não encontrada - Chronos Pomodoro');
   return (
     <MainTemplate>
       <Container>
